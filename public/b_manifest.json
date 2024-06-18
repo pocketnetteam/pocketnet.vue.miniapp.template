@@ -1,0 +1,15 @@
+{
+    "id": "demo.pocketnet.app",
+    "name": "Demo application",
+    "version": "0.0.1",
+    "description": "Demo application for Bastyon",
+    "descriptions" : {
+        "en" : "Demo application for Bastyon",
+        "ru" : "Демо приложение для Bastyon"
+    },
+    "author": "PQ8AiCHJaTZAThr2TnpkQYDyVd1Hidq4PM",
+    "develop": true,
+    "scope" : "demo.bastyonapps.com",
+    "start_url" : "index.html",
+    "permissions" : ["account", "notifications", "messaging", "payment", "sign", "mobilecamera", "chat"]
+}
