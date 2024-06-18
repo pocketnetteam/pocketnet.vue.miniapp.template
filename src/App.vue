@@ -20,9 +20,6 @@ export default {
 	},
 
 	computed : {
-		route : function(){
-			
-		}
 	},
 
 	mounted : function(){
@@ -31,7 +28,7 @@ export default {
 
 		this.sdk = new window.BastyonSdk()
 
-		this.sdk.init().then((applicationInfo) => {
+		this.sdk.init().then(() => {
 			
 		})
 
@@ -41,19 +38,19 @@ export default {
 			this.$router.push(this.sdk.getroute(data))
 		})
 
-		this.sdk.on('action', (d) => {
+		this.sdk.on('action', () => {
 		})
 
-		this.sdk.on('balance', (d) => {
+		this.sdk.on('balance', () => {
 		})
 
-		this.sdk.on('state', (d) => {
+		this.sdk.on('state', () => {
 		})
 
-		this.sdk.on('keyboard', ({height}) => {
+		this.sdk.on('keyboard', () => {
 		})
 
-		this.sdk.get.appinfo().then(({locale}) => {
+		this.sdk.get.appinfo().then(() => {
 		})
 
 	},
